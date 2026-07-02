@@ -15,7 +15,7 @@ void mik32_it_init(void){
     GPIO_IRQ->LEVEL = BIT(0);
 
     //Прерывание не будет формироваться по любому каналу
-    GPIO_IRQ->LEVEL = BIT(0);
+    GPIO_IRQ->ANY_EDGE_CLEAR = BIT(0);
 
     //Разрешаем прерывание от настроенного канала
     GPIO_IRQ->ENABLE_SET = BIT(0);

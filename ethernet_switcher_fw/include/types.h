@@ -8,4 +8,12 @@ enum class retv {
     Timeout = 2,
 };
 
+enum class ledTypes{
+    correct = 0,
+    error   = 1,
+};
+
+
+#define BIT(n) (1 << (n))
+
 #endif

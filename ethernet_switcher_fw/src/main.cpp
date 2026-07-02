@@ -1,11 +1,11 @@
 #include "main.h"
 #include "config.h"
+#include "yagpio.h"
 
 int main(){
     #pragma region // ==== Init ====
-    if(!MCU_Init()){
-
-    }
+    //for(volatile int i = 0; i < 3000000; i++);
+    gpio_errorIndicator(MCU_Init());
     #pragma endregion
 
 //приходит прерывание от модуля WS100
@@ -13,6 +13,8 @@ int main(){
 
 //Выполняем команды, которы чип нам сказал делать
 
-
-    __asm volatile("wfi"); // засыпаем до следующего прерывания
+    while(1) {
+            __asm volatile("wfi");
+        }
+   // __asm volatile("wfi"); // засыпаем до следующего прерывания
 }

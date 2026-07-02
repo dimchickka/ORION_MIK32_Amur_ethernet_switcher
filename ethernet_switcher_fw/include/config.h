@@ -1,10 +1,10 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-// ==== defines ====
-#define BIT(n) (1 << (n))
+#include "types.h"
 
-
+//retv MCU_Init(void);
+retv MCU_Init(void);
 
 
 #endif

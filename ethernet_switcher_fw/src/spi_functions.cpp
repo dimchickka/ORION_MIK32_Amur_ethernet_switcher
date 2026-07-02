@@ -34,11 +34,15 @@ retv spi_0_transfer(uint8_t tx_data, uint8_t* rx_data){
 
     uint32_t timeout = TIMEOUT_SPI_ITERATIONS;
     while(!(SPI_0->INT_STATUS & SPI_INT_STATUS_RX_FIFO_NOT_EMPTY_M)){ //флаг сбрасывается при чтении
-        timeout--;
+        if(--timeout == 0) return retv::Timeout;
     }
 
-    if(!(SPI_0->INT_STATUS & SPI_INT_STATUS_RX_FIFO_NOT_EMPTY_M)) return retv::Timeout;
+    if(rx_data != nullptr){
+        *rx_data = (uint8_t)SPI_0->RXDATA;
+    }
+    else{
+        (void)SPI_0->RXDATA;
+    }
 
-    *rx_data = (uint8_t)SPI_0->RXDATA;
     return retv::Timeout;
 }

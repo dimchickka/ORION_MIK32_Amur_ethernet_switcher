@@ -6,11 +6,10 @@
 #include "W5100.h"
 #include "mik32_it.h"
 #include "gpio.h"
+#include "yagpio.h"
 
 static void clock_init(void);
 static void pad_init(void);
-static void spi_init(void);
-static void gpio_init(void);
 
 
 retv MCU_Init(void){
@@ -25,6 +24,8 @@ retv MCU_Init(void){
     // глобальное разрешение прерываний
     //Выполняем ассемблерную инструкцию, чтобы выставить 3-й бит в регистре, который находится внутри ядра (у него нет адреса в карте памяти) 
     __asm volatile("csrsi mstatus, 0x8");
+
+    return retv::Ok;
 }
 
 static void clock_init(void){
@@ -33,9 +34,11 @@ static void clock_init(void){
                         |PM_CLOCK_APB_P_GPIO_0_M
                         |PM_CLOCK_APB_P_GPIO_1_M
                         |PM_CLOCK_APB_P_GPIO_2_M
-                        |PM_CLOCK_APB_P_GPIO_IRQ_M
-                        |PM_CLOCK_APB_M_EPIC_M;
+                        |PM_CLOCK_APB_P_GPIO_IRQ_M;
 
+    PM->CLK_APB_M_SET = PM_CLOCK_APB_M_EPIC_M
+                        |PM_CLOCK_APB_M_PAD_CONFIG_M
+                        |PM_CLOCK_APB_M_PM_M;
 }
 
 static void pad_init(void){
@@ -47,7 +50,15 @@ static void pad_init(void){
                             |PAD_CONFIG_PIN(1, 1)
                             |PAD_CONFIG_PIN(2, 1)
                             |PAD_CONFIG_PIN(4, 1)
-                            |PAD_CONFIG_PIN(5, 0); //INT (настраиваем 1 вход для INT от W5100)
+                            |PAD_CONFIG_PIN(5, 0)   //INT (настраиваем 1 вход для INT от W5100)
+                            |PAD_CONFIG_PIN(9, 0)   //Светодиод для индикации ошибки
+                            |PAD_CONFIG_PIN(10, 0) //Отладочный светодиод
+                            |PAD_CONFIG_PIN(11, 1)
+                            |PAD_CONFIG_PIN(12, 1)
+                            |PAD_CONFIG_PIN(13, 1)
+                            |PAD_CONFIG_PIN(14, 1)
+                            |PAD_CONFIG_PIN(15, 1);
+
 
     // ==== GPIO (настраиваем 20 выходов для 20 полевых транзисторов) ====
     PAD_CONFIG->PORT_1_CFG = PAD_CONFIG_PIN(12, 0)
@@ -70,7 +81,8 @@ static void pad_init(void){
                             |PAD_CONFIG_PIN(4, 0)
                             |PAD_CONFIG_PIN(3, 0)
                             |PAD_CONFIG_PIN(2, 0)
-                            |PAD_CONFIG_PIN(1, 0); //GPIO2 настраиваем 7 портов на выход      
+                            |PAD_CONFIG_PIN(1, 0)
+                            |PAD_CONFIG_PIN(0, 0);
 
 
 }
