@@ -13,10 +13,25 @@ void gpio_init(void){
 
 void gpio_errorIndicator(retv resOfOperation){
     if(resOfOperation != retv::Ok){
-        if(!(GPIO_0->STATE & BIT(SUCCESS_DIOD_PIN))) GPIO_0->SET = BIT(SUCCESS_DIOD_PIN);
-        if(GPIO_0->STATE & BIT(ERROR_DIOD_PIN)) GPIO_0->SET = BIT(ERROR_DIOD_PIN);
+        // Если есть ошибка, то просто зажжём светодиод
+        GPIO_0->CLEAR = BIT(SUCCESS_DIOD_PIN);  // включить (активный 0) 
     }
     else{
-        if(!(GPIO_0->STATE & BIT(SUCCESS_DIOD_PIN))) GPIO_0->SET = BIT(SUCCESS_DIOD_PIN);
+        //Если нет ошибок, то помигаем 5 раз
+        //Dыключить ERROR? включить SUCCESS
+        GPIO_0->SET = BIT(ERROR_DIOD_PIN); 
+        
+        for(int i = 0; i < 5; i++){  // выключить
+            GPIO_0->CLEAR = BIT(SUCCESS_DIOD_PIN);  // включить (активный 0) 
+            for(volatile int i = 0; i < 1000000; i++);
+            GPIO_0->SET   = BIT(SUCCESS_DIOD_PIN);
+            for(volatile int i = 0; i < 1000000; i++);
+        }
     }
+}
+
+
+retv makeConnectionsBetweenRelay(char* out_buf, uint16_t* out_size){
+    if(out_buf[0] != ':') return retv::Fail;
+    return retv::Ok;
 }

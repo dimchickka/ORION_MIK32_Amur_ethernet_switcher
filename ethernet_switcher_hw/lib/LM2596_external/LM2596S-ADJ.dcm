@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2596S-ADJ
+D Stepdown switch regulator,LM2596S-ADJ 1A
+K
+F https://www.ti.com/lit/ds/symlink/lm2596.pdf?HQS=ti-null-null-sf-df-pf-sep-wwe&ts=1592978195629
+$ENDCMP
+#
+#End Doc Library

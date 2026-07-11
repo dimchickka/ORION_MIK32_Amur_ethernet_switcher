@@ -5,28 +5,38 @@
 
 void spi_0_cs_low(void);
 void spi_0_cs_high(void);
-retv spi_0_transfer(uint8_t tx_data, uint8_t* rx_data);
 
 void spi_init(void){
-    //Master, 8МГц, CS = 0, ручное управление CS
+    // 1. Выключаем SPI
+    SPI_0->ENABLE &= ~SPI_ENABLE_M;
+    
+    // 2. Чистим буферы
+    SPI_0->ENABLE |= SPI_ENABLE_CLEAR_RX_FIFO_M;
+    SPI_0->ENABLE |= SPI_ENABLE_CLEAR_TX_FIFO_M;
+    
+    // 3. Очищаем флаги ошибок чтением INT_STATUS
+    volatile uint32_t unused = SPI_0->INT_STATUS;
+    (void)unused;
+    
+    // 4. Настраиваем CONFIG
     SPI_0->CONFIG = SPI_CONFIG_MASTER_M
-                    |SPI_CONFIG_BAUD_RATE_DIV_4_M // 32/4 = 8МГц
-                    |SPI_CONFIG_CS_0_M  //Записываем в биты 13-10 в регистр CONFIG значение 1110 (означает, что мы будем работать с CS_0 (с каналом 0))
-                    |SPI_CONFIG_MANUAL_CS_M;
-
-    SPI_0->ENABLE = SPI_ENABLE_CLEAR_RX_FIFO_M
-                    |SPI_ENABLE_CLEAR_TX_FIFO_M;
-
-    SPI_0->ENABLE = SPI_ENABLE_M;
-
+                  | SPI_CONFIG_BAUD_RATE_DIV_4_M
+                  | SPI_CONFIG_CS_0_M
+                  | SPI_CONFIG_MANUAL_CS_M;
+    
+    // 5. Задержка BTWN = 1 (как в HAL)
+    SPI_0->DELAY = SPI_DELAY_BTWN(1);
+    
+    // 6. Включаем SPI
+    SPI_0->ENABLE |= SPI_ENABLE_M;
 }
 
 void spi_0_cs_low(void){
-    SPI_0->CONFIG &= ~SPI_CONFIG_CS_NONE_M;
+    SPI_0->CONFIG = (SPI_0->CONFIG & ~SPI_CONFIG_CS_M) | SPI_CONFIG_CS_0_M;
 }
 
 void spi_0_cs_high(void){
-    SPI_0->CONFIG |= SPI_CONFIG_CS_NONE_M;
+    SPI_0->CONFIG = (SPI_0->CONFIG & ~SPI_CONFIG_CS_M) | SPI_CONFIG_CS_NONE_M;
 }
 
 retv spi_0_transfer(uint8_t tx_data, uint8_t* rx_data){
@@ -44,5 +54,5 @@ retv spi_0_transfer(uint8_t tx_data, uint8_t* rx_data){
         (void)SPI_0->RXDATA;
     }
 
-    return retv::Timeout;
+    return retv::Ok;
 }

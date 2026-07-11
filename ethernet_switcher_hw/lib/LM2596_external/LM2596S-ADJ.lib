@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model LM2596S-ADJ
+#/155346/2105283/2.50/7/4/Integrated Circuit
+DEF LM2596S-ADJ IC 0 30 Y Y 1 F N
+F0 "IC" 1450 300 50 H V L CNN
+F1 "LM2596S-ADJ" 1450 200 50 H V L CNN
+F2 "LM2596SXADJ" 1450 100 50 H I L CNN
+F3 "https://www.ti.com/lit/ds/symlink/lm2596.pdf?HQS=ti-null-null-sf-df-pf-sep-wwe&ts=1592978195629" 1450 0 50 H I L CNN
+F4 "Stepdown switch regulator,LM2596S-ADJ 1A" 1450 -100 50 H I L CNN "Description"
+F5 "4.57" 1450 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1450 -300 50 H I L CNN "Manufacturer_Name"
+F7 "LM2596S-ADJ" 1450 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "926-LM2596S-ADJ" 1450 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2596S-ADJ?qs=X1J7HmVL2ZGmRmhAtwKZ2Q%3D%3D" 1450 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 1450 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 1450 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X VIN 1 0 0 200 R 50 50 0 0 P
+X OUTPUT 2 0 -100 200 R 50 50 0 0 P
+X GND_1 3 0 -200 200 R 50 50 0 0 P
+X FEED_BACK 4 0 -300 200 R 50 50 0 0 P
+X ~ON~/OFF 5 1600 0 200 L 50 50 0 0 P
+X GND_2 T1 1600 -100 200 L 50 50 0 0 P
+X GND_3 T2 1600 -200 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1400 100 1400 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

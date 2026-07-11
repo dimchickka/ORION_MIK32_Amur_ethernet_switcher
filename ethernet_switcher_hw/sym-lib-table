@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LM2596S-ADJ")(type "Legacy")(uri "${KIPRJMOD}/lib/LM2596_external/LM2596S-ADJ.lib")(options "")(descr ""))
+)

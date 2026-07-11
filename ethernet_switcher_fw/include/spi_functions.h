@@ -4,7 +4,7 @@
 #include <stdint.h> 
 #include "types.h"
 
-#define TIMEOUT_SPI_ITERATIONS 1000
+#define TIMEOUT_SPI_ITERATIONS 1000000
 
 void spi_init(void);
 void spi_0_cs_low(void);

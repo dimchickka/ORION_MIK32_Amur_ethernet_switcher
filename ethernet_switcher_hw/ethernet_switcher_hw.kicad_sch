@@ -1,0 +1,253 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64")
+	(paper "A4" portrait)
+	(lib_symbols)
+	(sheet
+		(at 34.29 87.63)
+		(size 29.21 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 196 23 1.0000)
+		)
+		(uuid "113379e1-cd72-4637-8d3c-ab3c7cdff682")
+		(property "Sheetname" "power"
+			(at 34.29 86.9184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 34.29 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 85.09 137.16)
+		(size 35.56 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 196 45 1.0000)
+		)
+		(uuid "52a8a280-52f9-4707-90fe-f959c5967d97")
+		(property "Sheetname" "switcher"
+			(at 85.09 136.4484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "switcher.kicad_sch"
+			(at 85.09 166.9546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 86.36 74.93)
+		(size 31.75 46.99)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 57 241 1.0000)
+		)
+		(uuid "7778f632-16d2-435d-989e-52e7312cdb94")
+		(property "Sheetname" "MCU"
+			(at 86.36 74.2184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 86.36 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V" input
+			(at 86.36 99.06 180)
+			(uuid "9a4619a6-6d52-4dea-b76d-b0fa5f54618f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 137.16 87.63)
+		(size 33.02 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 203 31 1.0000)
+		)
+		(uuid "fed6ddc5-4511-40da-a2b7-bf91f7a4d619")
+		(property "Sheetname" "w5100"
+			(at 137.16 86.9184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "w5100.kicad_sch"
+			(at 137.16 117.4246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "gost_landscape.kicad_wks")
+			(type worksheet)
+			(data |KLUv/WDfIOUoALbrhDBAdTpUIcw/MJP0XXELgwM2RJUUltvb7kqnFRsAfKjdXRe3lDLJlMqgi/Ho
+				VDQicAF/AHIAdgAt6lwY74VZ9IM9pgur7hVlnMualvKlm/mZ2bQUbF6Ha05LZfPKME5DZx1ctzTb
+				UNC0VMEAeyAmaKdnc007L8uDUYo1fDA6UR8BYWUTJfeyILKNh4E+zA71TXlzG0EdLIp5WZ2J+tY7
+				KywQDU067WeCTtC0C0AnMNGmwzAhNp8poY2n91uE3QQC2aTX5KzowaKgCYlpKY7V2VBr6YU9tPb1
+				yAvCPqGZMCpdlFiqR10amrSBZm4PBphyZhbdg/z9j1fket17ZI17a9rZdSUdxn/o/vzc25fPo0so
+				Yf/7x+6O/9dVLd9Fhh81K6rea9nS/TcUKZU0YxCdm0xNCWnfb3Y92niyahalFZEoObJ/gw1J9aL6
+				k0rKINUPd+fvnRGc5J10Q7EsbnzNVTN3R9j7jhMe74yQ75t73O9Kobowil3uWfJKaVAxv3Uwuujb
+				D47iW5RGJZiW2kDeqFTypDeUGlMtSiHfuPeanQBUjMzu/ftXucvuyOyeS7mOnZ9Hdq/yJr2jVy7u
+				Q+jvFwT2JaaafGvNOubnItPxjdn97bdXzKSRb+cNpqrUl8oig6JSQV7XzVImVtGlnqRUjgcDlqUG
+				NImr4n7r11AqTGWpJA0HNR4lf2PpK5Wjwe+XilFqCYF1qEFJqkgkBSlKCsMBQRExhmDnrB6ySAzC
+				IBDDERmMQQKJEGSIgBghExJCRkhEjg/xYT9EVqPEgeCJ9lQuL1I5EZQb+MIPqZGjlcU9R393oscv
+				S5+70zuYVM0Ktd2gEveQbR8RbH0pLA6xrgj4O3D8hrneeqBy1yd5XdENa4kHBRCUiIX6qf7FgF03
+				QQ8ErDdL2OTUsfkUotugJVIZk76T3YNTPtLqkZNiKwxRmN/6KogZpj8MHocC2RLsRNh6CDEI1s2Y
+				P1hrINLlzHoQIvfIJ7iZP9pMr3pQXKx7Afmjfhb0QS6aeKwEV+fVU46okxy2A+tGH7s920xV0DgV
+				ATai6DV618bBdR6GhxYDiD8Id8ZnqT8WR/7ttZk71Z1z3E+KGuDRBXATTIbcrMMG0+HWROY4xb8N
+				Az0iWX1VTJTf+yvauO8jKPRg2/2NjM27lYbz+iqZjMgAwOPtvgk9Z7RV0zX6u0g4zVaW7P+DVDYA
+				MYAWaTzdKcxUkNR/98TKmVAzXifxG2hmJHZ6LMRcFurUXB6FKzKI99OSGHhDCPj/B2nGAgBWSZOb
+				PMc5VfDgEWoWLN2d2JnTaL/roijdqm+2A34L43BsU5w4HWVn6VHkNVzVIgEZRvvb7d8Y6BlM7Z9Y
+				AqWaI+nlbWKovmCyaK+fEGwdyOUz8um1WRokF6Ct10QN98uOydme+qUGoVJVfekjLHljVvGfIngj
+				Gx5Ta2dBtd3wInsoz/HdSHY4JUMSr3ZzAXa+WbvFB5ryveBYqwjTq9z+1ABm1lYoYXXKQdyOibqQ
+				dk4d+voaI62gjq5sNjZrQBLlMHnK0aaRs1SskwdVU+lW1KOLTokepJZEUyr9e2+WrCVP1dQjw+at
+				f1C6P2jcxOKeSOFDYRW4n6gA5xNVMB+6+7QO4p2v8zuOsWrmkNxtvv6bKHKQQyeICF5QuK+3V1aL
+				PbRv/bEWXREuRLhMMv/Fm26l9Z8lzoI5PulF6L1TvBIHZu/tjRvb6KIWTMXnLfLhDG/OYyRBHfP6
+				AMlMJ8JVAQ==|
+			)
+			(checksum "8C66D7EE6B6B34AEA6DB5F4BEA8DDF84")
+		)
+		(file
+			(name "gost_portrait.kicad_wks")
+			(type worksheet)
+			(data |KLUv/WBfIJ0nAKaqgjFQdTow6/sN5DR/vmVgznO2BusTYfKKtjvhvi10ZG94TYSBbSllkimVFJR/
+				JcJMEVMDfQBlAHsA/b2ibZNh1Fa+VDM/zXDdzDACAfZwJqiCdFvXkE1qq21mm7Zh6Kzb5qWbhoKo
+				rTB0Mw0EGLPTo8mopZu5eTRKNYaPRqnqHzjYRlVyM4yzaTwL1GF2qu/KLbcPtAGTmBnWoaq3eucE
+				BqKhSan9RNAJonYBaIQm0nQWJkfzoQLv37/LXUZ+96Rc5+2ZRrXMPbNDXufcwQCPstdd7jK6B/n7
+				H6/I9br3yO7t2vcfd8i5vqTD+A/dn597+/J5dAn7H7s7duv+1/XV8h+vi/BjwIai84suun+LOpnG
+				m2kY/Wh02yf3cZErSLUj+jYc9fdj3nePkfd6PDpVcHTAOnYqJhQnU3XZaL5KLvGSKrWkVONbcLPZ
+				CWk81LKEGt/86uhEqhnu2kk1VNviumVSWaqpkipKxai9TZrNzYocMAqKgLDa9y34vCDtgyDAGGul
+				WpxSakstVdJLAWZpaFIGGiOzCwCVf+R+7O1ev8UdIV9Mtygvfuvi5XgfQjfwWL6435/QvfMhujvN
+				NAdq5UPIvPc+yPBKLsg85wqZXWmpJNfoNCJb5OLYpJAIUUC6/+NFZ4/N/bhLdU0uH9+OpZ7UlWpy
+				qUtxOqkf76I4jU4sKdXyuGRJvXgLBoFmqDFJqmZEkoKkkGENUZXAGIKZOzuSOBCCMBgCQRxJYhQE
+				QgJIDCGEEEIIIoqIkGQ7oDMhQbjPlMS2/IRhPtncHs662b/eaerSQP0n4jdzbD8u/VPhXFQkM2PB
+				M0g4hoL9O8ZSZEm5eA2V4JIOydCXS4ODcxF0jXxkoHp02a1p0VWn0RH/UT2UCmF0AY2BARt6VKSp
+				gy3TjZB50tKWVI2OYJndTneHHl/+377mTjdBl6kg5Go11c418qFuscR2AW1OtO3IisvYjmJ+w58b
+				c9JeFpbOz4LMnRi25YGhtIQW4+EThtnr4kEFdINAwgmehuJVwZdiwpsGvYciq868Acp2BMhuHaIY
+				OSflHN88tPw6j7Ii5jQjP9RyHMYjEi217W8Bb2xjsUllKkVUdaBwTl+UwB8I9XYILeLLGJyw59Lg
+				H2bmncfQ7zdMc7r3Gf1t8c34Rj804IPi02raFTByf7X1OcvgF/3kyJm0YUE3jKWeiqOQBMgn8eVg
+				NHw5JGcxNd+Wnk6JiLnnVbRtA+Ctc2wm7jBR1eCVAb1FalVYmS0HkQFi13lSvG8WWkggX+Um6guL
+				rQqIhoEUqq074gZa5HydHh0a1jL9WrmaWHQKXJjAwaP7PI5PCR9gu+py5aFQXQsvORgWUjAqHEwM
+				1gjs1uDkkHTR+B+EuYqifD+CyUcpnuhOMo/JlRxVXXWPcfP3RLGQktY0djMAVp5cuo1mHKc+zm8z
+				q6+LhbIj9XTzgRL2wSwltvYP1lNCKGY35/Y8rklAN0AGmtCvIi+pH4/pTYJ8KYiqA6PQzOqYQ6pS
+				+vpSGT0fIzcQu6AJgQGk8nDSy/UF1HhMCT1u7oq2zqca8/mVNHKkTSZbXWQddurNvCEJy9xUqstI
+				G16wDja2NAOxnRe76HdcZ07Ji6cAhASJCIjRKLwvfyErA8lYA1fi7UdjIR5LXbJ5UHTbYLDMcV/O
+				qhMvBEwg7/KRiD/VFwTWPL0i1KmJyFU=|
+			)
+			(checksum "55C95474EEE6BFA28099C40EE6009E36")
+		)
+	)
+)

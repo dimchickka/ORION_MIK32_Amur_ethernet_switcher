@@ -7,6 +7,7 @@
 #include "mik32_it.h"
 #include "gpio.h"
 #include "yagpio.h"
+#include "types.h"
 
 static void clock_init(void);
 static void pad_init(void);
@@ -17,13 +18,17 @@ retv MCU_Init(void){
     pad_init();
     gpio_init();
     spi_init();
-    w5100_init();
-    mik32_it_init();
-    epic_init();
+    CHECK(w5100_init());
+   // mik32_it_init();
+    //epic_init();
 
     // глобальное разрешение прерываний
     //Выполняем ассемблерную инструкцию, чтобы выставить 3-й бит в регистре, который находится внутри ядра (у него нет адреса в карте памяти) 
-    __asm volatile("csrsi mstatus, 0x8");
+    //__asm volatile("csrsi mstatus, 0x8");
+    // РАЗРЕШЕНИЕ ВНЕШНИХ ПРЕРЫВАНИЙ ОТ EPIC в mie (включаем MEIE, бит 11 -> 0x800)
+    // Заставляем компилятор выделить под маску регистр ("r") и применить инструкцию csrs
+   // uint32_t mie_mask = 0x800;
+    //__asm volatile("csrs mie, %0" : : "r"(mie_mask));
 
     return retv::Ok;
 }
@@ -49,6 +54,7 @@ static void pad_init(void){
     PAD_CONFIG->PORT_0_CFG = PAD_CONFIG_PIN(0, 1)
                             |PAD_CONFIG_PIN(1, 1)
                             |PAD_CONFIG_PIN(2, 1)
+                            |PAD_CONFIG_PIN(3, 1)
                             |PAD_CONFIG_PIN(4, 1)
                             |PAD_CONFIG_PIN(5, 0)   //INT (настраиваем 1 вход для INT от W5100)
                             |PAD_CONFIG_PIN(9, 0)   //Светодиод для индикации ошибки
@@ -59,6 +65,8 @@ static void pad_init(void){
                             |PAD_CONFIG_PIN(14, 1)
                             |PAD_CONFIG_PIN(15, 1);
 
+PAD_CONFIG->PORT_0_PUPD |= (0b01 << (3 * 2)); // pull-up на пине 3
+PAD_CONFIG->PORT_0_PUPD |= (0b01 << (5 * 2)); // pull-up на пине 5 (задаем режим 0b01)
 
     // ==== GPIO (настраиваем 20 выходов для 20 полевых транзисторов) ====
     PAD_CONFIG->PORT_1_CFG = PAD_CONFIG_PIN(12, 0)
