@@ -97,6 +97,17 @@
 #define gS0_RX_BASE  0x6000  // начало RX-памяти сокета 0
 #define gS0_RX_MASK  0x1FFF  // маска для 8КБ
 
+// ==== Socket 0 TX регистры ====
+#define S0_TX_FSR0  0x0420  // TX Free Size (старший байт)
+#define S0_TX_FSR1  0x0421  // TX Free Size (младший байт)
+#define S0_TX_WR0   0x0424  // TX Write Pointer (старший байт)
+#define S0_TX_WR1   0x0425  // TX Write Pointer (младший байт)
+
+// ==== Socket 0 TX буфер ====
+#define gS0_TX_BASE  0x4000  // начало TX-памяти сокета 0
+#define gS0_TX_MASK  0x1FFF  // маска для 8КБ (совпадает с RX, т.к. TMSR тоже 0x03)
+
+
 
 // Максимальный размер принимаемой строки
 #define RX_BUF_SIZE 40  //Размер выбран под команду :SWIT5 1;SWIT11 5;*OPC?
@@ -105,5 +116,6 @@
 retv w5100_init(void);
 retv w5100_itHandler();
 retv w5100_read(uint16_t addr, uint8_t* rx);
+retv w5100_send(const char* data, uint16_t size);
 
 #endif

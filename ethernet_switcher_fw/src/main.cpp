@@ -9,6 +9,7 @@
 #include "W5100.h"
 #include "pad_config.h"
 #include "spi_functions.h"
+#include "timer32.h"
 
 volatile bool itFromW5200 = false;
 static uint8_t variable = 0;
@@ -20,6 +21,14 @@ int main(){
     gpio_errorIndicator(result);
 #pragma endregion
 
+        while(1) {
+        delay_ms(1000);
+        // Моргаем светодиодом
+        GPIO_1->SET = BIT(0); 
+
+        delay_ms(1000);
+        GPIO_1->CLEAR = BIT(0); 
+    }
 
     volatile uint8_t debug_s0_sr_live = 0xFF;
     volatile uint16_t debug_rx_size = 0;    

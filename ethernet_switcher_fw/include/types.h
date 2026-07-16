@@ -17,5 +17,6 @@ enum class ledTypes{
 
 #define BIT(n) (1 << (n))
 #define CHECK(expr) do { retv r = (expr); if(r != retv::Ok) return r; } while(0)
+#define IMPULSE_DURATION_FOR_RELE_MS 100
 
 #endif

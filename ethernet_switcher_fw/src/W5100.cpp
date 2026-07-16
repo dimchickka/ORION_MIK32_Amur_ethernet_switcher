@@ -203,3 +203,51 @@ static retv w5100_reopen_socket(void){
     }
     return retv::Ok;
 }
+
+retv w5100_send(const char* data, uint16_t size){
+    // 1. Проверяем свободное место в TX-буфере
+    uint8_t fsr_hi = 0, fsr_lo = 0;
+    CHECK(w5100_read(S0_TX_FSR0, &fsr_hi));
+    CHECK(w5100_read(S0_TX_FSR1, &fsr_lo));
+    uint16_t free_size = ((uint16_t)fsr_hi << 8) | fsr_lo;
+
+    if(free_size < size) return retv::NonValideData;  // места под новые данные не хватает
+
+    // 2. Читаем текущий указатель записи
+    uint8_t wr_hi = 0, wr_lo = 0;
+    CHECK(w5100_read(S0_TX_WR0, &wr_hi));
+    CHECK(w5100_read(S0_TX_WR1, &wr_lo));
+    uint16_t wr_ptr = ((uint16_t)wr_hi << 8) | wr_lo;
+
+    // 3. Считаем физический адрес с учётом кольцевого буфера
+    uint16_t offset = wr_ptr & gS0_TX_MASK;
+    uint16_t physical_addr = gS0_TX_BASE + offset;
+
+    if((offset + size) > (gS0_TX_MASK + 1)){
+        // данные не помещаются до конца буфера — пишем в два приёма
+        uint16_t upper_size = (gS0_TX_MASK + 1) - offset;
+        uint16_t left_size = size - upper_size;
+
+        for(uint16_t i = 0; i < upper_size; i++){
+            CHECK(w5100_write(physical_addr + i, (uint8_t)data[i]));
+        }
+        for(uint16_t i = 0; i < left_size; i++){
+            CHECK(w5100_write(gS0_TX_BASE + i, (uint8_t)data[upper_size + i]));
+        }
+    } else {
+        // данные помещаются непрерывно
+        for(uint16_t i = 0; i < size; i++){
+            CHECK(w5100_write(physical_addr + i, (uint8_t)data[i]));
+        }
+    }
+
+    // 4. Двигаем указатель записи вперёд
+    wr_ptr += size;
+    CHECK(w5100_write(S0_TX_WR0, (wr_ptr >> 8) & 0xFF));
+    CHECK(w5100_write(S0_TX_WR1, wr_ptr & 0xFF));
+
+    // 5. Даём команду SEND
+    CHECK(w5100_write(S0_CR, S0_CR_SEND));
+
+    return retv::Ok;
+}
