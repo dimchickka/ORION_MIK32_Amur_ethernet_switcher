@@ -1,4 +1,7 @@
 (sym_lib_table
   (version 7)
   (lib (name "LM2596S-ADJ")(type "Legacy")(uri "${KIPRJMOD}/lib/LM2596_external/LM2596S-ADJ.lib")(options "")(descr ""))
+  (lib (name "SN74LVCZ244APWR")(type "Legacy")(uri "${KIPRJMOD}/lib/SN74LVCZ244APWR_external/SN74LVCZ244APWR.lib")(options "")(descr ""))
+  (lib (name "AMS1117")(type "Legacy")(uri "${KIPRJMOD}/lib/AMS1117-3.3/AMS1117.lib")(options "")(descr ""))
+  (lib (name "MIK32 Amur")(type "KiCad")(uri "${KIPRJMOD}/lib/MIK32_DIP _debug_PCB/MIK32 Amur.kicad_sym")(options "")(descr ""))
 )

@@ -1,4 +1,4 @@
-27919812201468588
+27925165812717346
 Antennas
 ANT_868_10d4x36
 PCB 75.7x37.5, AntPcb 14.8mm
@@ -40571,6 +40571,13 @@ Surface mounted pin header SMD 2x40 2.54mm double row
 0
 80
 80
+Connector_PinHeader_2.54mm
+Без имени
+
+
+0
+0
+0
 Connector_PinSocket_1.00mm
 PinSocket_1x02_P1.00mm_Vertical
 Through hole straight socket strip, 1x02, 1.00mm pitch, single row (https://gct.co/files/drawings/bc065.pdf), script generated
@@ -110942,3 +110949,17 @@ Varistor VF
 0
 2
 2
+forShields_footprints
+dip_MIK32_Amur
+
+
+0
+48
+24
+forShields_footprints
+forW5100Shield
+
+
+0
+10
+10

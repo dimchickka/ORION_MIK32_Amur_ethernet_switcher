@@ -1,0 +1,6456 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "kicad_symbol_editor")
+	(generator_version "9.0")
+	(symbol "Connector_15_2_GOST"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "A"
+			(at 4.826 18.796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Connector_15_2_GOST_0_1"
+			(polyline
+				(pts
+					(xy -5.08 16.51) (xy -5.08 -24.13)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 16.51) (xy 5.08 16.51)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 13.97) (xy 5.08 13.97)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 11.43) (xy 5.08 11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 8.89) (xy 5.08 8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 6.35) (xy 5.08 6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 3.81) (xy 5.08 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 1.27) (xy 5.08 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -1.27) (xy 5.08 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -3.81) (xy 5.08 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -6.35) (xy 5.08 -6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -8.89) (xy 5.08 -8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -11.43) (xy 5.08 -11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -13.97) (xy 5.08 -13.97)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -16.51) (xy 5.08 -16.51)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -19.05) (xy 5.08 -19.05)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -21.59) (xy 5.08 -21.59)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -24.13) (xy 5.08 -24.13)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 16.51) (xy 0 -24.13)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 16.51) (xy 5.08 -24.13)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 16.51) (xy 10.16 -24.13)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 16.51) (xy 5.08 16.51)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 16.51) (xy 15.24 -24.13)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 13.97) (xy 5.08 13.97)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 11.43) (xy 5.08 11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 8.89) (xy 5.08 8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 6.35) (xy 5.08 6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 3.81) (xy 5.08 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 1.27) (xy 5.08 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -1.27) (xy 5.08 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -3.81) (xy 5.08 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -6.35) (xy 5.08 -6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -8.89) (xy 5.08 -8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -11.43) (xy 5.08 -11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -13.97) (xy 5.08 -13.97)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -16.51) (xy 5.08 -16.51)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -19.05) (xy 5.08 -19.05)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -21.59) (xy 5.08 -21.59)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 15.24 -24.13) (xy 5.08 -24.13)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Connector_15_2_GOST_1_1"
+			(text "Конт."
+				(at -2.54 15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "1"
+				(at -2.54 12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "2"
+				(at -2.54 10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "3"
+				(at -2.54 7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "4"
+				(at -2.54 5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "5"
+				(at -2.54 2.54 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "6"
+				(at -2.54 0 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "7"
+				(at -2.54 -2.54 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "8"
+				(at -2.54 -5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "9"
+				(at -2.54 -7.874 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "10"
+				(at -2.54 -10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "11"
+				(at -2.54 -12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "12"
+				(at -2.54 -15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "13\n"
+				(at -2.54 -17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "14"
+				(at -2.54 -20.32 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "15"
+				(at -2.54 -22.86 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r0p1"
+				(at 2.497 10.1331 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Цепь"
+				(at 2.54 15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r0p0"
+				(at 2.54 12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 2.54 7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r1p0\n"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r1p1\n"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r2p0"
+				(at 2.54 -2.54 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r2p1\n"
+				(at 2.54 -5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 2.54 -7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r3p0\n"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r3p1"
+				(at 2.54 -12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 2.54 -15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r4p0"
+				(at 2.54 -17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r4p1"
+				(at 2.54 -20.32 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 2.54 -23.114 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Цепь"
+				(at 7.62 15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r5p0"
+				(at 7.62 12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 7.62 7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r6p0"
+				(at 7.62 5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r6p1"
+				(at 7.62 2.54 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 7.62 0 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r7p0"
+				(at 7.62 -2.54 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r7p1"
+				(at 7.62 -5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 7.62 -7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r8p0"
+				(at 7.62 -10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r8p1"
+				(at 7.62 -12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 7.62 -15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r9p0"
+				(at 7.62 -17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r9p1"
+				(at 7.62 -20.32 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 7.62 -23.114 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r5p1"
+				(at 7.663 10.1331 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Конт."
+				(at 12.7 15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "16"
+				(at 12.7 12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "17\n"
+				(at 12.7 10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "18\n"
+				(at 12.7 7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "19\n"
+				(at 12.7 5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "20\n"
+				(at 12.7 2.54 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "21"
+				(at 12.7 0 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "22"
+				(at 12.7 -2.54 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "23"
+				(at 12.7 -5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "24"
+				(at 12.7 -7.874 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "25\n"
+				(at 12.7 -10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "26"
+				(at 12.7 -12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "27"
+				(at 12.7 -15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "28"
+				(at 12.7 -17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "29"
+				(at 12.7 -20.32 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "30"
+				(at 12.7 -22.86 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 12.7 0)
+				(length 2.54)
+				(name "rop0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 10.16 0)
+				(length 2.54)
+				(name "rop1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 7.62 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 5.08 0)
+				(length 2.54)
+				(name "r1p0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "r1p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "r2p0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "r2p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -7.62 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -10.16 0)
+				(length 2.54)
+				(name "r3p0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -12.7 0)
+				(length 2.54)
+				(name "r3p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -15.24 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -17.78 0)
+				(length 2.54)
+				(name "r4p0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -20.32 0)
+				(length 2.54)
+				(name "r4p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -22.86 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 12.7 180)
+				(length 2.54)
+				(name "r5p0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 10.16 180)
+				(length 2.54)
+				(name "r5p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 7.62 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 5.08 180)
+				(length 2.54)
+				(name "r6p0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 2.54 180)
+				(length 2.54)
+				(name "r6p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 0 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -2.54 180)
+				(length 2.54)
+				(name "r7p0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -5.08 180)
+				(length 2.54)
+				(name "r7p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -7.62 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -10.16 180)
+				(length 2.54)
+				(name "r8p0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -12.7 180)
+				(length 2.54)
+				(name "r8p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -15.24 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -17.78 180)
+				(length 2.54)
+				(name "r9p0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -20.32 180)
+				(length 2.54)
+				(name "r9p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 -22.86 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Connector_15_2_GOST_telemetry"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Connector_15_2_GOST_telemetry_0_1"
+			(polyline
+				(pts
+					(xy -8.89 -3.81) (xy -8.89 -44.45)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -3.81) (xy 1.27 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -6.35) (xy 1.27 -6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -8.89) (xy 1.27 -8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -11.43) (xy 1.27 -11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -13.97) (xy 1.27 -13.97)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -16.51) (xy 1.27 -16.51)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -19.05) (xy 1.27 -19.05)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -21.59) (xy 1.27 -21.59)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -24.13) (xy 1.27 -24.13)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -26.67) (xy 1.27 -26.67)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -29.21) (xy 1.27 -29.21)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -31.75) (xy 1.27 -31.75)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -34.29) (xy 1.27 -34.29)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -36.83) (xy 1.27 -36.83)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -39.37) (xy 1.27 -39.37)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -41.91) (xy 1.27 -41.91)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 -44.45) (xy 1.27 -44.45)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 -3.81) (xy -3.81 -44.45)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -3.81) (xy 1.27 -44.45)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.35 -3.81) (xy 6.35 -44.45)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -3.81) (xy 1.27 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -3.81) (xy 11.43 -44.45)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -6.35) (xy 1.27 -6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -8.89) (xy 1.27 -8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -11.43) (xy 1.27 -11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -13.97) (xy 1.27 -13.97)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -16.51) (xy 1.27 -16.51)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -19.05) (xy 1.27 -19.05)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -21.59) (xy 1.27 -21.59)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -24.13) (xy 1.27 -24.13)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -26.67) (xy 1.27 -26.67)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -29.21) (xy 1.27 -29.21)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -31.75) (xy 1.27 -31.75)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -34.29) (xy 1.27 -34.29)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -36.83) (xy 1.27 -36.83)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -39.37) (xy 1.27 -39.37)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -41.91) (xy 1.27 -41.91)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 11.43 -44.45) (xy 1.27 -44.45)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Connector_15_2_GOST_telemetry_1_1"
+			(text "Конт."
+				(at -6.35 -5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "1"
+				(at -6.35 -7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "2"
+				(at -6.35 -10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "3"
+				(at -6.35 -12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "4"
+				(at -6.35 -15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "5"
+				(at -6.35 -17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "6"
+				(at -6.35 -20.32 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "7"
+				(at -6.35 -22.86 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "8"
+				(at -6.35 -25.4 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "9"
+				(at -6.35 -28.194 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "10"
+				(at -6.35 -30.48 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "11"
+				(at -6.35 -33.02 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "12"
+				(at -6.35 -35.56 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "13\n"
+				(at -6.35 -38.1 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "14"
+				(at -6.35 -40.64 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "15"
+				(at -6.35 -43.18 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r0t1"
+				(at -1.313 -10.1869 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Цепь"
+				(at -1.27 -5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r0t0"
+				(at -1.27 -7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at -1.27 -12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r1t0\n"
+				(at -1.27 -15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r1t1\n"
+				(at -1.27 -17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at -1.27 -20.32 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r2t0"
+				(at -1.27 -22.86 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r2t1\n"
+				(at -1.27 -25.4 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at -1.27 -27.94 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r3t0\n"
+				(at -1.27 -30.48 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r3t1"
+				(at -1.27 -33.02 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at -1.27 -35.56 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r4t0"
+				(at -1.27 -38.1 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r4t1"
+				(at -1.27 -40.64 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at -1.27 -43.434 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Цепь"
+				(at 3.81 -5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r5t0"
+				(at 3.81 -7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 3.81 -12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r6t0"
+				(at 3.81 -15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r6t1"
+				(at 3.81 -17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 3.81 -20.32 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r7t0"
+				(at 3.81 -22.86 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r7t1"
+				(at 3.81 -25.4 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 3.81 -27.94 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r8t0"
+				(at 3.81 -30.48 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r8t1"
+				(at 3.81 -33.02 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 3.81 -35.56 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r9t0"
+				(at 3.81 -38.1 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r9t1"
+				(at 3.81 -40.64 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+3.3V"
+				(at 3.81 -43.434 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "r5t1"
+				(at 3.853 -10.1869 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Конт."
+				(at 8.89 -5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "16"
+				(at 8.89 -7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "17\n"
+				(at 8.89 -10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "18\n"
+				(at 8.89 -12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "19\n"
+				(at 8.89 -15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "20\n"
+				(at 8.89 -17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "21"
+				(at 8.89 -20.32 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "22"
+				(at 8.89 -22.86 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "23"
+				(at 8.89 -25.4 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "24"
+				(at 8.89 -28.194 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "25\n"
+				(at 8.89 -30.48 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "26"
+				(at 8.89 -33.02 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "27"
+				(at 8.89 -35.56 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "28"
+				(at 8.89 -38.1 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "29"
+				(at 8.89 -40.64 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "30"
+				(at 8.89 -43.18 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -7.62 0)
+				(length 2.54)
+				(name "rot0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -10.16 0)
+				(length 2.54)
+				(name "rot1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -12.7 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -15.24 0)
+				(length 2.54)
+				(name "r1t0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -17.78 0)
+				(length 2.54)
+				(name "r1t1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -20.32 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -22.86 0)
+				(length 2.54)
+				(name "r2t0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -25.4 0)
+				(length 2.54)
+				(name "r2t1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -27.94 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -30.48 0)
+				(length 2.54)
+				(name "r3t0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -33.02 0)
+				(length 2.54)
+				(name "r3t1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -35.56 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -38.1 0)
+				(length 2.54)
+				(name "r4t0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -40.64 0)
+				(length 2.54)
+				(name "r4t1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -43.18 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -7.62 180)
+				(length 2.54)
+				(name "r5t0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -10.16 180)
+				(length 2.54)
+				(name "r5t1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -12.7 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -15.24 180)
+				(length 2.54)
+				(name "r6t0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -17.78 180)
+				(length 2.54)
+				(name "r6t1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -20.32 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -22.86 180)
+				(length 2.54)
+				(name "r7t0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -25.4 180)
+				(length 2.54)
+				(name "r7t1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -27.94 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -30.48 180)
+				(length 2.54)
+				(name "r8t0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -33.02 180)
+				(length 2.54)
+				(name "r8p1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -35.56 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -38.1 180)
+				(length 2.54)
+				(name "r9t0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -40.64 180)
+				(length 2.54)
+				(name "r9t1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -43.18 180)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "MIK32_Amur_DIP_Debug_PCB"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0.254 40.386 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MIK32 Amur"
+			(at 0.508 37.592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MIK32_Amur_DIP_Debug_PCB_0_1"
+			(rectangle
+				(start -16.51 35.56)
+				(end 17.78 -33.02)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 33.02) (xy -6.35 33.02)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 30.48) (xy -6.35 30.48)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 27.94) (xy -6.35 27.94)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 25.4) (xy -6.35 25.4)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 22.86) (xy -6.35 22.86)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 20.32) (xy -6.35 20.32)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 17.78) (xy -6.35 17.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 15.24) (xy -6.35 15.24)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 12.7) (xy -6.35 12.7)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 10.16) (xy -6.35 10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 7.62) (xy -6.35 7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 5.08) (xy -6.35 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 2.54) (xy -6.35 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 0) (xy -6.35 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -2.54) (xy -6.35 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -5.08) (xy -6.35 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -7.62) (xy -6.35 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -10.16) (xy -6.35 -10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -12.7) (xy -6.35 -12.7)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -15.24) (xy -6.35 -15.24)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -17.78) (xy -6.35 -17.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -20.32) (xy -6.35 -20.32)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -22.86) (xy -6.35 -22.86)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -25.4) (xy -6.35 -25.4)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -27.94) (xy -6.35 -27.94)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -16.51 -30.48) (xy -6.35 -30.48)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -11.43 33.02) (xy -11.43 -30.48)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -6.35 33.02) (xy -6.35 -30.48)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 33.02) (xy 7.62 -30.48)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 33.02) (xy 17.78 33.02)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -30.48) (xy 17.78 -30.48)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 33.02) (xy 12.7 -30.48)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 30.48) (xy 7.62 30.48)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 27.94) (xy 7.62 27.94)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 25.4) (xy 7.62 25.4)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 22.86) (xy 7.62 22.86)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 20.32) (xy 7.62 20.32)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 17.78) (xy 7.62 17.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 15.24) (xy 7.62 15.24)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 12.7) (xy 7.62 12.7)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 10.16) (xy 7.62 10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 7.62) (xy 7.62 7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 5.08) (xy 7.62 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 2.54) (xy 7.62 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 0) (xy 7.62 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -2.54) (xy 7.62 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -5.08) (xy 7.62 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -7.62) (xy 7.62 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -10.16) (xy 7.62 -10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -12.7) (xy 7.62 -12.7)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -15.24) (xy 7.62 -15.24)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -17.78) (xy 7.62 -17.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -20.32) (xy 7.62 -20.32)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -22.86) (xy 7.62 -22.86)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -25.4) (xy 7.62 -25.4)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 -27.94) (xy 7.62 -27.94)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "MIK32_Amur_DIP_Debug_PCB_1_1"
+			(text "18"
+				(at -13.9765 -14.0757 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Конт."
+				(at -13.97 31.75 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "1"
+				(at -13.97 29.21 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "2"
+				(at -13.97 26.67 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "3"
+				(at -13.97 24.13 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "4"
+				(at -13.97 21.59 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "5"
+				(at -13.97 19.05 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "6"
+				(at -13.97 16.51 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "7"
+				(at -13.97 13.97 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "8"
+				(at -13.97 11.43 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "9"
+				(at -13.97 8.636 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "10"
+				(at -13.97 6.35 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "11"
+				(at -13.97 3.81 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "12"
+				(at -13.97 1.27 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "13\n"
+				(at -13.97 -1.27 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "14"
+				(at -13.97 -3.81 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "15"
+				(at -13.97 -6.35 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "16\n"
+				(at -13.97 -9.144 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "17"
+				(at -13.97 -11.684 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "19\n"
+				(at -13.97 -16.764 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "20\n"
+				(at -13.97 -19.304 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "21"
+				(at -13.97 -21.59 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "22"
+				(at -13.97 -24.13 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "23"
+				(at -13.97 -26.67 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "24\n"
+				(at -13.97 -29.21 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "3V3"
+				(at -8.933 26.6431 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Цепь"
+				(at -8.89 31.75 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "3V3"
+				(at -8.89 29.21 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "RST"
+				(at -8.89 24.13 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.15\n"
+				(at -8.89 21.59 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.14\n"
+				(at -8.89 19.05 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.13\n"
+				(at -8.89 16.51 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.12\n\n"
+				(at -8.89 13.97 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.11\n\n"
+				(at -8.89 11.43 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.10\n"
+				(at -8.89 8.89 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.9\n\n"
+				(at -8.89 6.35 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.8\n"
+				(at -8.89 3.81 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.7\n\n"
+				(at -8.89 1.27 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.6\n"
+				(at -8.89 -1.27 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.5\n"
+				(at -8.89 -3.81 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.4\n"
+				(at -8.89 -6.604 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.3\n"
+				(at -8.89 -8.89 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.2\n"
+				(at -8.89 -11.43 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.1\n"
+				(at -8.89 -13.97 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P1.0\n"
+				(at -8.89 -16.51 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P2.7\n\n"
+				(at -8.89 -19.05 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P2.6"
+				(at -8.89 -21.59 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P2.5"
+				(at -8.89 -24.13 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P2.4\n"
+				(at -8.89 -26.67 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P2.3\n"
+				(at -8.89 -29.21 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Цепь"
+				(at 10.16 31.75 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "RTC-A"
+				(at 10.16 29.21 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.1\n"
+				(at 10.16 24.13 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.2\n\n"
+				(at 10.16 21.59 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.3\n"
+				(at 10.16 19.05 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.4"
+				(at 10.16 16.51 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.5"
+				(at 10.16 13.97 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "AGND\n"
+				(at 10.16 11.43 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "AVCC\n"
+				(at 10.16 8.89 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.6"
+				(at 10.16 6.35 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.7"
+				(at 10.16 3.81 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.8"
+				(at 10.16 1.27 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.9\n"
+				(at 10.16 -1.27 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.10\n"
+				(at 10.16 -3.81 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.11\n"
+				(at 10.16 -6.35 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.12\n"
+				(at 10.16 -8.89 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.13\n"
+				(at 10.16 -11.43 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.14\n\n"
+				(at 10.16 -13.97 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.15\n"
+				(at 10.16 -16.51 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P2.0\n\n"
+				(at 10.16 -19.05 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P2.1\n"
+				(at 10.16 -21.59 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P2.2\n"
+				(at 10.16 -24.13 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "EW"
+				(at 10.16 -26.67 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "GND\n"
+				(at 10.16 -29.21 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "P0.0"
+				(at 10.203 26.6431 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Конт."
+				(at 15.24 31.75 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "48"
+				(at 15.24 29.21 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "47"
+				(at 15.24 26.67 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "46"
+				(at 15.24 24.13 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "45"
+				(at 15.24 21.59 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "44"
+				(at 15.24 19.05 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "43"
+				(at 15.24 16.51 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "42"
+				(at 15.24 13.97 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "41"
+				(at 15.24 11.43 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "40"
+				(at 15.24 8.636 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "39"
+				(at 15.24 6.35 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "38"
+				(at 15.24 3.81 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "37"
+				(at 15.24 1.27 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "36"
+				(at 15.24 -1.27 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "35"
+				(at 15.24 -3.81 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "34"
+				(at 15.24 -6.35 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "33"
+				(at 15.24 -9.144 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "32"
+				(at 15.24 -11.684 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "30\n"
+				(at 15.24 -16.764 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "29\n"
+				(at 15.24 -19.304 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "28"
+				(at 15.24 -21.59 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "27"
+				(at 15.24 -24.13 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "26"
+				(at 15.24 -26.67 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "25\n"
+				(at 15.24 -29.21 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "31\n"
+				(at 15.2465 -14.0757 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 29.21 0)
+				(length 2.54)
+				(name "3V3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 26.67 0)
+				(length 2.54)
+				(name "3V3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 24.13 0)
+				(length 2.54)
+				(name "RST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 21.59 0)
+				(length 2.54)
+				(name "P1.15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 19.05 0)
+				(length 2.54)
+				(name "P1.14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 16.51 0)
+				(length 2.54)
+				(name "P1.13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 13.97 0)
+				(length 2.54)
+				(name "P1.12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 11.43 0)
+				(length 2.54)
+				(name "P1.11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 8.89 0)
+				(length 2.54)
+				(name "P1.10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 6.35 0)
+				(length 2.54)
+				(name "P1.9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 3.81 0)
+				(length 2.54)
+				(name "P1.8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 1.27 0)
+				(length 2.54)
+				(name "P1.7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -1.27 0)
+				(length 2.54)
+				(name "P1.6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -3.81 0)
+				(length 2.54)
+				(name "P1.5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -6.35 0)
+				(length 2.54)
+				(name "P1.4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -8.89 0)
+				(length 2.54)
+				(name "P1.3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -11.43 0)
+				(length 2.54)
+				(name "P1.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -13.97 0)
+				(length 2.54)
+				(name "P1.1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -16.51 0)
+				(length 2.54)
+				(name "P1.0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -19.05 0)
+				(length 2.54)
+				(name "P2.7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -21.59 0)
+				(length 2.54)
+				(name "P2.6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -24.13 0)
+				(length 2.54)
+				(name "P2.5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -26.67 0)
+				(length 2.54)
+				(name "P2.4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -19.05 -29.21 0)
+				(length 2.54)
+				(name "P2.3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 29.21 180)
+				(length 2.54)
+				(name "RTC-A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 26.67 180)
+				(length 2.54)
+				(name "P0.0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "47"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 24.13 180)
+				(length 2.54)
+				(name "P0.1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 21.59 180)
+				(length 2.54)
+				(name "P0.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "45"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 19.05 180)
+				(length 2.54)
+				(name "P0.3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 16.51 180)
+				(length 2.54)
+				(name "P0.4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "43"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 13.97 180)
+				(length 2.54)
+				(name "P0.5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "42"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 11.43 180)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "41"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 8.89 180)
+				(length 2.54)
+				(name "AVCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 6.35 180)
+				(length 2.54)
+				(name "P0.6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 3.81 180)
+				(length 2.54)
+				(name "P0.7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 1.27 180)
+				(length 2.54)
+				(name "P0.8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -1.27 180)
+				(length 2.54)
+				(name "P0.9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -3.81 180)
+				(length 2.54)
+				(name "P0.10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -6.35 180)
+				(length 2.54)
+				(name "P0.11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -8.89 180)
+				(length 2.54)
+				(name "P0.12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -11.43 180)
+				(length 2.54)
+				(name "P0.13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -13.97 180)
+				(length 2.54)
+				(name "P0.14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -16.51 180)
+				(length 2.54)
+				(name "P0.15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -19.05 180)
+				(length 2.54)
+				(name "P2.0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -21.59 180)
+				(length 2.54)
+				(name "P2.1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -24.13 180)
+				(length 2.54)
+				(name "P2.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -26.67 180)
+				(length 2.54)
+				(name "EW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 -29.21 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "w5100_shield"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "A2"
+			(at 0 26.162 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "w5100_shield"
+			(at 0.508 23.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.wildberries.ru/catalog/1048457145/detail.aspx"
+			(at 5.08 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "w5100_shield_0_1"
+			(rectangle
+				(start -12.7 21.59)
+				(end 12.7 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -12.7 16.51) (xy -2.54 16.51)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -12.7 13.97) (xy -2.54 13.97)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -12.7 11.43) (xy -2.54 11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -12.7 8.89) (xy -2.54 8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -12.7 6.35) (xy -2.54 6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -12.7 3.81) (xy -2.54 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -7.62 19.05) (xy -7.62 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 3.81) (xy -2.54 19.05) (xy -12.7 19.05)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 3.81) (xy 2.54 19.05) (xy 12.7 19.05)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 19.05) (xy 7.62 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 16.51) (xy 2.54 16.51)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 13.97) (xy 2.54 13.97)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 11.43) (xy 2.54 11.43)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 8.89) (xy 2.54 8.89)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 6.35) (xy 2.54 6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.7 3.81) (xy 2.54 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "w5100_shield_1_1"
+			(text "Конт."
+				(at -10.16 17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "1"
+				(at -10.16 15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "7"
+				(at -10.16 12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "3"
+				(at -10.16 10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "8"
+				(at -10.16 7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "5"
+				(at -10.16 5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "MISO\n"
+				(at -5.334 12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "MOSI\n"
+				(at -5.334 10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "CLK\n"
+				(at -5.334 7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Цепь"
+				(at -5.08 17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "POE-\n"
+				(at -5.08 15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "NSS\n"
+				(at -5.08 5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Цепь"
+				(at 5.08 17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "POE+\n"
+				(at 5.08 15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "GND\n"
+				(at 5.08 12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "+5V\n"
+				(at 5.08 10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "GND"
+				(at 5.08 5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "RST"
+				(at 5.123 7.5931 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "Конт."
+				(at 10.16 17.78 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "6"
+				(at 10.16 15.24 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "2"
+				(at 10.16 12.7 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "4"
+				(at 10.16 10.16 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "9"
+				(at 10.16 7.62 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "10"
+				(at 10.16 5.08 0)
+				(effects
+					(font
+						(face "GOST type A")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 15.24 0)
+				(length 2.54)
+				(name "POE-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 12.7 0)
+				(length 2.54)
+				(name "MISO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 10.16 0)
+				(length 2.54)
+				(name "MOSI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 7.62 0)
+				(length 2.54)
+				(name "CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 5.08 0)
+				(length 2.54)
+				(name "+5V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 15.24 180)
+				(length 2.54)
+				(name "POE+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 12.7 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 10.16 180)
+				(length 2.54)
+				(name "NSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 7.62 180)
+				(length 2.54)
+				(name "RST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 5.08 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)

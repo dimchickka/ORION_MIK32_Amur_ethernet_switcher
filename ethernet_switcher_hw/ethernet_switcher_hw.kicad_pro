@@ -598,7 +598,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "kicad-embed://gost_portrait.kicad_wks",
-    "plot_directory": "",
+    "plot_directory": "../../",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -613,22 +613,6 @@
     [
       "9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64",
       "Root"
-    ],
-    [
-      "7778f632-16d2-435d-989e-52e7312cdb94",
-      "MCU"
-    ],
-    [
-      "113379e1-cd72-4637-8d3c-ab3c7cdff682",
-      "power"
-    ],
-    [
-      "fed6ddc5-4511-40da-a2b7-bf91f7a4d619",
-      "w5100"
-    ],
-    [
-      "52a8a280-52f9-4707-90fe-f959c5967d97",
-      "switcher"
     ]
   ],
   "text_variables": {}
