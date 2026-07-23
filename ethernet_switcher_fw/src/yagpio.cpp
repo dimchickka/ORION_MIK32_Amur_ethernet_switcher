@@ -6,168 +6,266 @@
 #include "W5100.h"
 #include <string.h>
 #include "config.h"
+#include "timers.h"
 
-#define PINS_6_TO_11_MASK (BIT(6)|BIT(7)|BIT(8)|BIT(9)|BIT(10)|BIT(11))
-
-retv toggleAppropriateChannel(uint8_t channel, uint8_t condition);
+retv ensureRelayPosition(uint8_t relay, uint8_t condition);
+static void clockTicksForTelemetry(uint8_t numberOfTicks);
+void checkCurrentTelemetryOfTheRelay(uint8_t relay, uint8_t* telemetryBufForOneRELAY);
+static retv toggleRELAY(uint8_t relay, uint8_t condition);
+static retv sendPositionData(uint8_t relay, uint8_t* telemetryBuf);
 
 void gpio_init(void){
-    GPIO_0->DIRECTION_IN = BIT(5);
-    GPIO_0->DIRECTION_OUT = BIT(10);
-    
-    // Пины 0-5 и 12 остаются выходами, пины 6-11 — входы
-    GPIO_1->DIRECTION_OUT = (BIT(13) - 1) & ~(BIT(6)|BIT(7)|BIT(8)|BIT(9)|BIT(10)|BIT(11));
-    GPIO_1->DIRECTION_IN  = (BIT(6)|BIT(7)|BIT(8)|BIT(9)|BIT(10)|BIT(11));
+    //Put initial values
+    GPIO_0->SET = CTRL_NENABLE_BUFFER1_PART1 | CTRL_NENABLE_BUFFER1_PART2 | CTRL_NENABLE_BUFFER2_PART1;
+    GPIO_0->CLEAR = TM_CLK_PIN;
 
-    GPIO_2->DIRECTION_OUT = (BIT(8) - 1) & ~BIT(0); // на выход с 7-го по 1-й включительно
+    GPIO_1->SET = TM_PL_PIN | TM_CE_PIN | CTRL_NENABLE_BUFFER2_PART2 | CTRL_NENABLE_BUFFER3_PART1 | CTRL_NENABLE_BUFFER3_PART2;
+
+
+    GPIO_0->DIRECTION_OUT = (TM_CLK_PIN|CTRL_NENABLE_BUFFER1_PART1|CTRL_NENABLE_BUFFER1_PART2|CTRL_NENABLE_BUFFER2_PART1);
+
+    GPIO_1->DIRECTION_OUT = (TM_PL_PIN|TM_CE_PIN|CTRL_NENABLE_BUFFER2_PART2|CTRL_NENABLE_BUFFER3_PART1|CTRL_NENABLE_BUFFER3_PART2);
+    GPIO_1->DIRECTION_IN  = TM_DATA_PIN; //Вход телеметрии
+
 }
 
 void gpio_errorIndicator(retv resOfOperation){
     if(resOfOperation != retv::Ok){
         // Если есть ошибка, то просто зажжём светодиод
-        GPIO_0->CLEAR = BIT(SUCCESS_DIOD_PIN);  // включить (активный 0) 
+        GPIO_0->CLEAR = BIT(INDICATE_DIOD_PORT);  // включить (активный 0) 
     }
     else{
         //Если нет ошибок, то помигаем 5 раз
-        //Dыключить ERROR? включить SUCCESS
-        GPIO_0->SET = BIT(ERROR_DIOD_PIN); 
-        
-        for(int i = 0; i < 5; i++){  // выключить
-            GPIO_0->CLEAR = BIT(SUCCESS_DIOD_PIN);  // включить (активный 0) 
+        for(int i = 0; i < MISTAKE_BLINK; i++){  // выключить
+            GPIO_0->CLEAR = BIT(INDICATE_DIOD_PORT);  // включить (активный 0) 
             for(volatile int i = 0; i < 1000000; i++);
-            GPIO_0->SET   = BIT(SUCCESS_DIOD_PIN);
+            GPIO_0->SET   = BIT(INDICATE_DIOD_PORT);
             for(volatile int i = 0; i < 1000000; i++);
         }
     }
 }
 
 
-retv makeConnectionsBetweenRelay(char* out_buf, uint16_t* out_size){
-    w5100_send("OK\r\n", 4);
-    if(out_buf[0] != ':') return retv::NonValideData;
+retv parseTheCommand(char* out_buf, uint16_t* out_size){
+    if(out_buf[CMD_START_SYMBOL_OFFSET] != CMD_START_SYMBOL) return retv::NonValideData;
 
-    if(strncmp(out_buf + 1, "SWIT", strlen("SWIT")) == 0){
-        w5100_send("I see SWIT\r\n", 12);
-        char digit_char = out_buf[5];
-        uint8_t relay_num = digit_char - '0'; 
+    if(STR_MATCH(out_buf, CMD_TOGGLE_OFFSET, CMD_TOGGLE)){
+        //проваливаемся в условие, значит команда верная
+        char digit_char = out_buf[CMD_FIRST_RELE_NUMBER_OFFSET]; //Считываем номер реле
+        uint8_t relay_num = digit_char - CHAR_ZERO; 
 
-        //We have only three rele: number 0m number 1, number 2
-        if(relay_num > 2  || relay_num < 0) return retv::NonValideData;
+        //We have only three RELAY: number 0, number 1, number 2
+        if(relay_num > RELAY_2) return retv::NonValideData;
 
-        char releCondition = out_buf[7];
-        uint8_t releCondition_num = releCondition - '0';
-        if(releCondition_num != 1 && releCondition_num != 2) return retv::NonValideData;
+        if(out_buf[CMD_SPACE_SYMBOL_OFFSET] != CMD_SPACE_SYMBOL) return retv::NonValideData;
 
-        toggleAppropriateChannel(relay_num, releCondition_num);
+        char RELAYCondition = out_buf[CMD_FIRST_RELE_POSITION_OFFSET];
+        uint8_t RELAYCondition_num = RELAYCondition - CHAR_ZERO;
+        if(RELAYCondition_num != RELAY_POSITION_1 && RELAYCondition_num != RELAY_POSITION_2) return retv::NonValideData;
 
-        if(strncmp(out_buf + 8, ";SWIT", strlen(";SWIT")) == 0){
-            char second_relay_digit_char = out_buf[13];
-            uint8_t second_relay_relay_num = second_relay_digit_char - '0'; 
-
-            //We have only three rele: number 0m number 1, number 2
-            if(second_relay_relay_num > 2  || second_relay_relay_num < 0) return retv::NonValideData;
-
-            char second_relay_releCondition = out_buf[15];
-            uint8_t second_relay_releCondition_num = second_relay_releCondition - '0';
-            if(second_relay_releCondition_num != 1 || second_relay_releCondition_num != 2) return retv::NonValideData;
-
-            toggleAppropriateChannel(second_relay_relay_num, second_relay_releCondition_num);
+        if(ensureRelayPosition(relay_num, RELAYCondition_num) == retv::Fail){
+            W5100_SEND_STR(MSG_MISTAKE);
+            return retv::Fail;
         }
-        else return retv::NonValideData;
-    }
-    else return retv::NonValideData;
+        if(STR_MATCH(out_buf, CMD_SECOND_TOGGLE_OFFSET, CMD_SECOND_TOGGLE)){
+            char second_relay_digit_char = out_buf[CMD_SECOND_RELE_NUMBER_OFFSET];
+            uint8_t second_relay_relay_num = second_relay_digit_char - CHAR_ZERO; 
 
-    return retv::Ok;
-}
+            //We have only three RELAY: number 0m number 1, number 2
+            if(second_relay_relay_num > RELAY_2) return retv::NonValideData;
 
-retv toggleAppropriateChannel(uint8_t channel, uint8_t condition){
-    w5100_send("I'm inside toggle\r\n", 19);
-    if(channel == 0){
-        uint8_t currentPosition = 1;
-        //GPIO1_6 - телеметрия position 1 для реле 0
-        //GPIO1_7 - телеметрия position 2 для реле 0
-        //Считываем текущее положение реле с телеметрии
-        uint32_t state_gpio1 = GPIO_1->STATE; //Считыванием состояние регистра
-        if(!(state_gpio1 & BIT(6))){
-                currentPosition = 1;
-                w5100_send("Telemetriya for reley 0 in position 1\r\n", 39);
-        }
-        else if(!(state_gpio1 & BIT(7))){
-             w5100_send("Telemetriya for reley 0 in position 2\r\n", 39);
-            currentPosition = 2;
-        }
-        else return retv::Fail;
+            char second_relay_RELAYCondition = out_buf[CMD_SECOND_RELE_POSITION_OFFSET];
+            uint8_t second_relay_RELAYCondition_num = second_relay_RELAYCondition - CHAR_ZERO;
+            if(second_relay_RELAYCondition_num != RELAY_POSITION_1 && second_relay_RELAYCondition_num != RELAY_POSITION_2) return retv::NonValideData;
 
-        if(condition == 1){//Т.е., если нужно переключить реле в положение 1
-            if(currentPosition == 1) return retv::Ok;
-            GPIO_1->SET = BIT(0); //Переключаем реле в положение 1
-            w5100_send("Check the GPIO 1 port 0\r\n",26);
-            delay_ms(1000);
-            GPIO_1->CLEAR = BIT(0);
+            if(ensureRelayPosition(second_relay_relay_num, second_relay_RELAYCondition_num) == retv::Fail){
+                W5100_SEND_STR(MSG_MISTAKE);
+                return retv::Fail;
+            }
         }
         else{
-            if(currentPosition == 2) return retv::Ok;
-            GPIO_1->SET = BIT(1); //Переключаем реле в положение 1
-            delay_ms(IMPULSE_DURATION_FOR_RELE_MS);
-            GPIO_1->CLEAR = BIT(1);
+            W5100_SEND_STR(MSG_MISTAKE);
+            return retv::NonValideData;
         }
     }
+    else if(STR_MATCH(out_buf, CMD_CHECK_OFFSET, CMD_CHECK)){
+        uint8_t telemetryBuf[TELEMETRY_BUF_SIZE];
+        if(STR_MATCH(out_buf, CMD_RELAY_NUMBER_OFFSET, CMD_RELAY_0)){
+            if(sendPositionData(RELAY_0, telemetryBuf) == retv::Fail) return retv::Fail;
+        }
+        else if(STR_MATCH(out_buf, CMD_RELAY_NUMBER_OFFSET, CMD_RELAY_1)){
+            if(sendPositionData(RELAY_1, telemetryBuf) == retv::Fail) return retv::Fail;
+        }
 
-    else if(channel == 1){
-        uint8_t currentPosition = 1;
-        //GPIO1_8 - телеметрия position 1 для реле 1
-        //GPIO1_9 - телеметрия position 2 для реле 1
-        //Считываем текущее положение реле с телеметрии
-        uint32_t state_gpio1 = GPIO_1->STATE; //Считыванием состояние регистра
-        if(!(state_gpio1 & BIT(8))){
-                currentPosition = 1;
+        else if(STR_MATCH(out_buf, CMD_RELAY_NUMBER_OFFSET, CMD_RELAY_2)){
+            if(sendPositionData(RELAY_2, telemetryBuf) == retv::Fail) return retv::Fail;
         }
-        else if(!(state_gpio1 & BIT(9))){
-            currentPosition = 2;
-        }
-        else return retv::Fail;
-
-        if(condition == 1){//Т.е., если нужно переключить реле в положение 1
-            if(currentPosition == 1) return retv::Ok; //Если оно уже в положении 1
-            GPIO_1->SET = BIT(2); //Переключаем реле в положение 1
-            delay_ms(IMPULSE_DURATION_FOR_RELE_MS);
-            GPIO_1->CLEAR = BIT(2);
-        }
-        else{
-            if(currentPosition == 2) return retv::Ok;
-            GPIO_1->SET = BIT(3); //Переключаем реле в положение 1
-            delay_ms(IMPULSE_DURATION_FOR_RELE_MS);
-            GPIO_1->CLEAR = BIT(3);
+        else if(STR_MATCH(out_buf, CMD_RELAY_NUMBER_OFFSET, CMD_CHECK_ALL)){
+            for(int i = 0; i < NUMBER_OF_RELAY; i++){
+                if(sendPositionData(i, telemetryBuf) == retv::Fail) return retv::Fail;
+            }
         }
     }
-
     else{
-        uint8_t currentPosition = 1;
-        //GPIO1_10 - телеметрия position 1 для реле 2
-        //GPIO1_11 - телеметрия position 2 для реле 2
-        //Считываем текущее положение реле с телеметрии
-        uint32_t state_gpio1 = GPIO_1->STATE; //Считыванием состояние регистра
-        if(!(state_gpio1 & BIT(10))){
-                currentPosition = 1;
-        }
-        else if(!(state_gpio1 & BIT(11))){
-            currentPosition = 2;
-        }
-        else return retv::Fail;
-
-        if(condition == 1){//Т.е., если нужно переключить реле в положение 1
-            if(currentPosition == 1) return retv::Ok; //Если оно уже в положении 1
-            GPIO_1->SET = BIT(4); //Переключаем реле в положение 1
-            delay_ms(IMPULSE_DURATION_FOR_RELE_MS);
-            GPIO_1->CLEAR = BIT(4);
-        }
-        else{
-            if(currentPosition == 2) return retv::Ok;
-            GPIO_1->SET = BIT(5); //Переключаем реле в положение 1
-            delay_ms(IMPULSE_DURATION_FOR_RELE_MS);
-            GPIO_1->CLEAR = BIT(5);
-        }
+        W5100_SEND_STR(MSG_MISTAKE);
+        return retv::NonValideData;
     }
 
+    W5100_SEND_STR(MSG_OK);
     return retv::Ok;
 }
+
+retv ensureRelayPosition(uint8_t channel, uint8_t condition){
+    uint8_t currentPosition = RELAY_POSITION_1;
+    uint8_t telemetryBufForOneRELAY[TELEMETRY_BUF_SIZE];
+    checkCurrentTelemetryOfTheRelay(channel, telemetryBufForOneRELAY);
+
+    if(telemetryBufForOneRELAY[TELEMETRU_BUF_POSITON_1]){
+        currentPosition = RELAY_POSITION_1;
+    }
+    else if(telemetryBufForOneRELAY[TELEMETRU_BUF_POSITON_2]){
+        currentPosition = RELAY_POSITION_2;
+    }
+    else return retv::Fail;
+
+    if(condition == RELAY_POSITION_1){//Т.е., если нужно переключить реле в положение 1
+        if(currentPosition == RELAY_POSITION_1) return retv::Ok;
+        if(toggleRELAY(channel, condition) == retv::Fail) return retv::Fail;
+    }
+    else{
+        if(currentPosition == RELAY_POSITION_2) return retv::Ok;
+        if(toggleRELAY(channel, condition) == retv::Fail) return retv::Fail;
+    }
+    return retv::Ok;
+}
+
+
+
+void checkCurrentTelemetryOfTheRelay(uint8_t RELAY, uint8_t* telemetryBufForOneRELAY){
+    GPIO_1->CLEAR = TM_PL_PIN; //Открываем параллельную запись
+    __asm volatile("nop"); 
+    GPIO_1->SET = TM_PL_PIN; //Защёлкиваем данные
+
+    GPIO_1->CLEAR = TM_CE_PIN; //Разрешаем тактирование
+    
+    if(RELAY == RELAY_2){
+        //Даём 2 clock
+        clockTicksForTelemetry(2);
+         __asm volatile("nop"); 
+
+        uint32_t state_gpio1 = GPIO_1->STATE; //Считыванием состояние регистра
+        telemetryBufForOneRELAY[TELEMETRU_BUF_POSITON_2] = (state_gpio1 & TM_DATA_PIN) >> TM_DATA_PIN_S;
+
+        //Затем даём 1 clock
+        clockTicksForTelemetry(1);
+         __asm volatile("nop"); 
+
+        state_gpio1 = GPIO_1->STATE; //Снова считыванием состояние регистра
+        telemetryBufForOneRELAY[TELEMETRU_BUF_POSITON_1] = (state_gpio1 & TM_DATA_PIN) >> TM_DATA_PIN_S;
+    }
+
+    else if(RELAY == RELAY_2){
+        //Даём 4 clock
+        clockTicksForTelemetry(4);
+         __asm volatile("nop"); 
+
+        uint32_t state_gpio1 = GPIO_1->STATE; //Считыванием состояние регистра
+        telemetryBufForOneRELAY[TELEMETRU_BUF_POSITON_2] = (state_gpio1 & TM_DATA_PIN) >> TM_DATA_PIN_S;
+
+        //Затем даём 1 clock
+        clockTicksForTelemetry(1);
+         __asm volatile("nop"); 
+
+        state_gpio1 = GPIO_1->STATE; //Снова считыванием состояние регистра
+        telemetryBufForOneRELAY[TELEMETRU_BUF_POSITON_1] = (state_gpio1 & TM_DATA_PIN) >> TM_DATA_PIN_S;
+    }
+    else{
+        //Даём 6 clock
+        clockTicksForTelemetry(6);
+         __asm volatile("nop"); 
+
+        uint32_t state_gpio1 = GPIO_1->STATE; //Считыванием состояние регистра
+        telemetryBufForOneRELAY[TELEMETRU_BUF_POSITON_2] = (state_gpio1 & TM_DATA_PIN) >> TM_DATA_PIN_S;
+
+        //Затем даём 1 clock
+        clockTicksForTelemetry(1);
+         __asm volatile("nop"); 
+
+        state_gpio1 = GPIO_1->STATE; //Снова считыванием состояние регистра
+        telemetryBufForOneRELAY[TELEMETRU_BUF_POSITON_1] = (state_gpio1 & TM_DATA_PIN) >> TM_DATA_PIN_S;
+    }
+
+    GPIO_1->SET = TM_CE_PIN; //Запрещаем тактирование
+}
+
+
+
+static void clockTicksForTelemetry(uint8_t numberOfTicks){
+    while(numberOfTicks){
+        GPIO_0->SET = TM_CLK_PIN;
+        __asm volatile ("nop");
+        GPIO_0->CLEAR = TM_CLK_PIN;
+        __asm volatile ("nop");
+        numberOfTicks--;
+    }
+}
+
+static retv toggleRELAY(uint8_t relay, uint8_t condition){
+    if(relay == RELAY_0){
+        GPIO_0->CLEAR = CTRL_NENABLE_BUFFER1_PART1;
+        __asm volatile ("nop");
+        if(condition == RELAY_POSITION_1){
+            relay_pulse(CHANNEL_FOR_RELAY_PULSE_0);
+        }
+        else{
+            relay_pulse(CHANNEL_FOR_RELAY_PULSE_1);
+        }
+
+        GPIO_0->SET = CTRL_NENABLE_BUFFER1_PART1;
+    }
+    else if(relay == RELAY_1){
+        GPIO_0->CLEAR = CTRL_NENABLE_BUFFER1_PART1;
+        __asm volatile ("nop");
+        if(condition == RELAY_POSITION_1){
+            relay_pulse(CHANNEL_FOR_RELAY_PULSE_2);
+        }
+        else{
+            relay_pulse(CHANNEL_FOR_RELAY_PULSE_3);
+        }
+        GPIO_0->SET = CTRL_NENABLE_BUFFER1_PART1;
+    }
+
+    // Relay 2
+    else{
+        GPIO_0->CLEAR = CTRL_NENABLE_BUFFER1_PART2;
+        __asm volatile ("nop");
+        if(condition == RELAY_POSITION_1){
+            relay_pulse(CHANNEL_FOR_RELAY_PULSE_0);  
+        }
+        else{
+            relay_pulse(CHANNEL_FOR_RELAY_PULSE_1);
+        }
+        GPIO_0->SET = CTRL_NENABLE_BUFFER1_PART2;
+    }
+
+    //Проверка: всё ли переключилось, как должно было?
+    uint8_t telemetryBuf[TELEMETRY_BUF_SIZE];
+    checkCurrentTelemetryOfTheRelay(relay, telemetryBuf);
+    if(telemetryBuf[condition - 1]) return retv::Ok;
+    else return retv::Fail;
+}
+
+static retv sendPositionData(uint8_t relay, uint8_t* telemetryBuf){
+        checkCurrentTelemetryOfTheRelay(relay, telemetryBuf);
+        if(telemetryBuf[TELEMETRU_BUF_POSITON_1]){
+            W5100_SEND_STR(MSG_POSITION_1);
+        }
+        else if(telemetryBuf[TELEMETRU_BUF_POSITON_2]){
+            W5100_SEND_STR(MSG_POSITION_2);
+        }
+        else{
+            W5100_SEND_STR(MSG_MISTAKE);
+            return retv::Fail;
+        }
+        return retv::Ok;
+    }

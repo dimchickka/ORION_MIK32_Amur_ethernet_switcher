@@ -1,3 +1,11 @@
+/*
+ * w5100.cpp
+ *
+ *  Created on: 4.07.2023
+ *      Author: DimKa
+ */
+
+
 #include "W5100.h"
 #include "spi_functions.h"
 #include "types.h"
@@ -103,7 +111,7 @@ retv w5100_itHandler(){
         uint16_t rx_size = 0;
         w5100_receive(rx_buf, &rx_size);
 
-        makeConnectionsBetweenRelay(rx_buf, &rx_size);
+        parseTheCommand(rx_buf, &rx_size);
     }
 
     if (s0_ir & S0_IR_TIMEOUT_M) {

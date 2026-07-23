@@ -5,7 +5,7 @@
 
 extern volatile bool itFromW5200;
 
-#define GPIO0_5_IRQ_LINE  5
+#define GPIO0_5_IRQ_LINE  5 //If physical interrupts are used
 
 void mik32_it_init(void){
 

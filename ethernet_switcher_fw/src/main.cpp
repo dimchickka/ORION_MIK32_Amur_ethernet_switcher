@@ -1,62 +1,23 @@
 #include "main.h"
 #include "config.h"
 #include "yagpio.h"
-#include <stdint.h> 
-#include "gpio.h"
-#include "mik32_memory_map.h"
-#include "epic.h"
-#include "gpio_irq.h"
 #include "W5100.h"
-#include "pad_config.h"
-#include "spi_functions.h"
-#include "timer32.h"
-#include "timers.h"
+#include <stdint.h> 
 
 volatile bool itFromW5200 = false;
-static uint8_t variable = 0;
 
 int main(){
     #pragma region // ==== Init ====
-    //Если инициализация успешно завершена, то светодиод P0.10 помигает 5 раз, если ошибка - светодиод просто загорится
+    //Если инициализация успешно завершена, то светодиод помигает MISTAKE_BLINK раз, если ошибка - светодиод просто загорится
     retv result = MCU_Init();
-    //gpio_errorIndicator(result);
+    gpio_errorIndicator(result);
+    #pragma endregion
 
-    relay_pulse(0);
-    for(volatile uint32_t i = 0; i < 500000; i++);
-    relay_pulse(0);
-    for(volatile uint32_t i = 0; i < 500000; i++);
-    relay_pulse(0);
-#pragma endregion
-
-
-    while (1){}
-    
-    //     while(1) {
-    //     delay_ms(1000);
-    //     // Моргаем светодиодом
-    //     GPIO_1->SET = BIT(0); 
-
-    //     delay_ms(1000);
-    //     GPIO_1->CLEAR = BIT(0); 
-    // }
-
-
-    volatile uint8_t debug_s0_sr_live = 0xFF;
-    volatile uint16_t debug_rx_size = 0;    
-     while(1) {
-        w5100_read(S0_SR, (uint8_t*)&debug_s0_sr_live);
-    
-        uint8_t rsr_hi = 0, rsr_lo = 0;
-        w5100_read(S0_RX_RSR0, &rsr_hi);
-        w5100_read(S0_RX_RSR1, &rsr_lo);
-        debug_rx_size = ((uint16_t)rsr_hi << 8) | rsr_lo;
-        
-        uint8_t s0_ir = 0;
+     while(1) {      
+        uint8_t s0_ir = INITIAL_VALUE_OF_INTERRUPT_REGISTER;
         w5100_read(S0_IR, &s0_ir);
-        if(s0_ir != 0x00){
+        if(s0_ir != INITIAL_VALUE_OF_INTERRUPT_REGISTER){
             w5100_itHandler();
+        }
     }
-    }
-
-        __asm volatile("wfi"); // засыпаем до следующего прерывания
 }

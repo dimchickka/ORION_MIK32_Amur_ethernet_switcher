@@ -28,9 +28,9 @@ void timer32_2_init(void) {
     TIMER32_2->CONTROL   = TIMER32_CONTROL_MODE_UP_M;
     TIMER32_2->TOP       = RELAY_PERIOD_TICKS;
 
-    for (int ch = 0; ch < 4; ch++) {
+    for (int ch = 0; ch < CHANNELS_GENERAL_NUMBER; ch++) {
         TIMER32_2->CHANNELS[ch].OCR   = RELAY_PULSE_TICKS;
-        TIMER32_2->CHANNELS[ch].CNTRL = TIMER32_CH_CNTRL_MODE_PWM_M; // канал выключен
+        TIMER32_2->CHANNELS[ch].CNTRL = TIMER32_CH_CNTRL_MODE_PWM_M | TIMER32_CH_CNTRL_INVERTED_PWM_M; // канал выключен
     }
     TIMER32_2->ENABLE = TIMER32_ENABLE_TIM_EN_M; //Включаем таймер
 }
@@ -40,21 +40,12 @@ void delay_us(uint32_t us){
     volatile uint32_t currentValueToCheck = 0;
     while((TIMER32_1->VALUE - start) < us){
         currentValueToCheck = TIMER32_1->VALUE;
-        uint8_t toDoSmth = 5;
-        toDoSmth ++;
     }
 }
 
 void delay_ms(uint32_t ms){
     delay_us(ms * 1000);
 }
-
-
-volatile uint32_t dbg_value_before_clr[3];
-volatile uint32_t dbg_ocr_check[3];
-volatile uint32_t dbg_cntrl_check[3];
-volatile uint32_t dbg_enable_check[3];
-volatile uint8_t  dbg_call_index = 0;
 
 void relay_pulse(uint8_t channel) {
     //Очищаем таймер
@@ -63,7 +54,7 @@ void relay_pulse(uint8_t channel) {
     //Включаем канал
     TIMER32_2->CHANNELS[channel].CNTRL |= TIMER32_CH_CNTRL_ENABLE_M;
     // Ждём окончания импульса
-    while (TIMER32_2->VALUE < RELAY_PULSE_TICKS + 100);
+    while (TIMER32_2->VALUE < RELAY_PULSE_TICKS);
 
     // Выключаем канал
     TIMER32_2->CHANNELS[channel].CNTRL &= ~TIMER32_CH_CNTRL_ENABLE_M;
