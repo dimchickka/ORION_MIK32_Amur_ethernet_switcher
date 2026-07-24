@@ -1,4 +1,4 @@
-27925165898038837
+27926950768643832
 Antennas
 ANT_868_10d4x36
 PCB 75.7x37.5, AntPcb 14.8mm
@@ -71683,6 +71683,13 @@ Jumper
 SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels
 SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open, labeled with numbers
 solder jumper open
+0
+3
+3
+K7805-2000R3
+CONV_R-78B5.0-1.5
+
+
 0
 3
 3

@@ -4,4 +4,5 @@
   (lib (name "SN74LVCZ244APWR")(type "Legacy")(uri "${KIPRJMOD}/lib/SN74LVCZ244APWR_external/SN74LVCZ244APWR.lib")(options "")(descr ""))
   (lib (name "AMS1117")(type "Legacy")(uri "${KIPRJMOD}/lib/AMS1117-3.3/AMS1117.lib")(options "")(descr ""))
   (lib (name "MIK32 Amur")(type "KiCad")(uri "${KIPRJMOD}/lib/MIK32_DIP _debug_PCB/MIK32 Amur.kicad_sym")(options "")(descr ""))
+  (lib (name "K7805-2000R3")(type "Legacy")(uri "${KIPRJMOD}/lib/K7805_2000R3/R-78B5.0-1.5.lib")(options "")(descr ""))
 )
