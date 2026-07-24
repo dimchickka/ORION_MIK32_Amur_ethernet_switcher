@@ -12132,6 +12132,17 @@
 		)
 		(uuid "204dd797-8d24-46f0-a44c-c11ccf452012")
 	)
+	(text "принципиальная"
+		(exclude_from_sim no)
+		(at 752.348 567.944 0)
+		(effects
+			(font
+				(face "GOST type A")
+				(size 5 5)
+			)
+		)
+		(uuid "3892c896-8b8b-4f25-bd17-2d7b4559993e")
+	)
 	(text "POWER\n"
 		(exclude_from_sim no)
 		(at 125.73 159.512 0)
@@ -12142,6 +12153,17 @@
 		)
 		(uuid "3d1f9815-c4bc-46fb-94ff-be65d7493e27")
 	)
+	(text "МГТУ.468349.001"
+		(exclude_from_sim no)
+		(at 17.018 335.534 90)
+		(effects
+			(font
+				(face "GOST type A")
+				(size 4 4)
+			)
+		)
+		(uuid "6ec6f8c0-f3c0-48f6-a208-4d6f755bcae5")
+	)
 	(text "CONTROL_SIGNALS"
 		(exclude_from_sim no)
 		(at 511.556 520.446 0)
@@ -12151,6 +12173,28 @@
 			)
 		)
 		(uuid "8fd55728-8555-440f-aaab-940022d9a7db")
+	)
+	(text "АО «НПО «Орион»"
+		(exclude_from_sim no)
+		(at 812.038 581.66 0)
+		(effects
+			(font
+				(face "GOST type A")
+				(size 5 5)
+			)
+		)
+		(uuid "a71780de-19c4-459f-b3dc-8868373466e6")
+	)
+	(text "Схема электрическая \n"
+		(exclude_from_sim no)
+		(at 752.856 562.102 0)
+		(effects
+			(font
+				(face "GOST type A")
+				(size 5 5)
+			)
+		)
+		(uuid "aee12951-31e7-4f60-b874-7cd93656986d")
 	)
 	(text "Левченко В.П."
 		(exclude_from_sim no)
@@ -12172,6 +12216,17 @@
 			)
 		)
 		(uuid "e1758aa9-67f1-4213-a44b-a5415b8cfeb7")
+	)
+	(text "МГТУ.468349.001 Э3"
+		(exclude_from_sim no)
+		(at 775.208 542.29 0)
+		(effects
+			(font
+				(face "GOST type A")
+				(size 5 5)
+			)
+		)
+		(uuid "e385b08f-455c-4ec2-8d9c-95873de491b0")
 	)
 	(junction
 		(at 571.5 438.15)
@@ -12838,6 +12893,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f01aa2df-a85a-4a36-aae2-1b1079c02f71")
+	)
+	(junction
+		(at 158.75 227.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1a0c6af-fdd8-4f24-b555-3f646fafe2cf")
 	)
 	(junction
 		(at 388.62 510.54)
@@ -15188,6 +15249,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 227.33) (xy 161.29 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16bf9faa-dcc2-4d2b-b70c-621090e72533")
+	)
+	(wire
+		(pts
 			(xy 241.3 252.73) (xy 300.99 252.73)
 		)
 		(stroke
@@ -15475,6 +15546,16 @@
 			(type default)
 		)
 		(uuid "21eab5c2-d4b2-48bb-86bd-1fc803ee52bd")
+	)
+	(wire
+		(pts
+			(xy 158.75 227.33) (xy 158.75 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2220d3b0-831a-41f6-b271-fa2714cb91b0")
 	)
 	(wire
 		(pts
@@ -18608,7 +18689,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 227.33) (xy 161.29 227.33)
+			(xy 149.86 227.33) (xy 158.75 227.33)
 		)
 		(stroke
 			(width 0)
@@ -20805,6 +20886,16 @@
 			(type default)
 		)
 		(uuid "e8b17548-af2f-4627-8e83-ee4d80ea86a5")
+	)
+	(wire
+		(pts
+			(xy 158.75 240.03) (xy 170.18 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e95edef1-04d1-460e-80bf-5067917ac83a")
 	)
 	(wire
 		(pts
@@ -23636,72 +23727,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 350.52 500.38 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0285b36e-182e-493d-a205-0fd14135e548")
-		(property "Reference" "#PWR088"
-			(at 354.33 500.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 350.012 498.856 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 350.52 500.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 350.52 500.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 350.52 500.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "febeaaa9-a93b-4286-9886-21480a7955af")
-		)
-		(instances
-			(project "ethernet_switcher_hw"
-				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
-					(reference "#PWR088")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 450.85 386.08 0)
 		(unit 1)
@@ -23766,6 +23791,72 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 350.52 523.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03ab678f-0454-437d-bebc-c82721ddaddf")
+		(property "Reference" "#PWR089"
+			(at 354.33 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 351.79 521.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 350.52 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 350.52 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81b8dd43-636d-43b7-96f3-971f267db97e")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -24404,72 +24495,6 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "R71")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 350.52 523.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ff88751-cb0f-4316-9191-b052774db949")
-		(property "Reference" "#PWR097"
-			(at 354.33 523.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 349.25 521.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 350.52 523.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 350.52 523.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 350.52 523.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c022e1f8-6d21-40a3-bb85-3e56ed79a34c")
-		)
-		(instances
-			(project "ethernet_switcher_hw"
-				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
-					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -26903,6 +26928,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 375.92 492.76 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f4bf984-89b6-49db-bdd0-9d928f43329a")
+		(property "Reference" "#PWR092"
+			(at 372.11 492.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 376.428 491.236 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 375.92 492.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 375.92 492.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 375.92 492.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4cc45cd3-0a54-4d8e-9f54-07458484cec1")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "GOST:GND")
 		(at 300.99 199.39 0)
 		(unit 1)
@@ -27221,73 +27312,6 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "#PWR083")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 375.92 515.62 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3223d0ce-beb1-4aa3-a0fe-35e7376b7f74")
-		(property "Reference" "#PWR096"
-			(at 372.11 515.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 379.73 515.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 515.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 515.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 375.92 515.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2da49d6a-b265-4497-9ee2-0b2c92213497")
-		)
-		(instances
-			(project "ethernet_switcher_hw"
-				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
-					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -28947,72 +28971,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 350.52 508 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "468f9057-94e7-490f-99b5-bd9926b98d32")
-		(property "Reference" "#PWR092"
-			(at 354.33 508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 349.25 506.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 350.52 508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 350.52 508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 350.52 508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bb9f7cae-4ea2-41fb-a0e3-c649993db081")
-		)
-		(instances
-			(project "ethernet_switcher_hw"
-				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
-					(reference "#PWR092")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Small")
 		(at 494.03 567.69 180)
 		(unit 1)
@@ -29388,73 +29346,6 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "R48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 375.92 523.24 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4da9b4ae-6036-4909-b4ca-832c2268c69d")
-		(property "Reference" "#PWR098"
-			(at 372.11 523.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 379.73 523.2399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 523.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 523.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 375.92 523.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "803c2d6e-977d-4897-a1c5-7415b02da1da")
-		)
-		(instances
-			(project "ethernet_switcher_hw"
-				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
-					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -30428,6 +30319,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 350.52 508 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5be4de7d-a5ba-42ee-ac01-c82576a82ae3")
+		(property "Reference" "#PWR088"
+			(at 354.33 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 351.79 506.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 350.52 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 350.52 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0eb260b5-5f08-4988-8fc1-43c606480c21")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 571.5 441.96 0)
 		(unit 1)
@@ -30492,6 +30449,72 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 375.92 508 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5ce0dde2-ae69-472b-830d-76d52843af87")
+		(property "Reference" "#PWR095"
+			(at 372.11 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 376.428 506.476 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 375.92 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 375.92 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 375.92 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7bb2727b-77fa-4413-a2e9-a93ce6c5f323")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -30701,73 +30724,6 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "R78")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 375.92 500.38 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62f56a05-f779-4378-a6d1-2220d1ef71c6")
-		(property "Reference" "#PWR089"
-			(at 372.11 500.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 379.73 500.3799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 500.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 500.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 375.92 500.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9194910-5e09-4c36-adf0-2dfff656343a")
-		)
-		(instances
-			(project "ethernet_switcher_hw"
-				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
-					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -31437,6 +31393,72 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 170.18 240.03 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f20a80b-6ea6-4231-b549-c4c25925c659")
+		(property "Reference" "#PWR0122"
+			(at 166.37 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 169.672 242.316 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 170.18 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "221e1ac8-b017-4f6d-b3c1-2b82e0e9ce24")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -33199,6 +33221,76 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 158.75 236.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fda6e6b-70a9-4851-9775-7d0c2c293eae")
+		(property "Reference" "R79"
+			(at 161.29 234.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 161.29 237.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 156.972 236.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 158.75 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55b64b3f-93f5-4a06-8e3f-fac03cc13526")
+		)
+		(pin "2"
+			(uuid "8984f12c-0088-4abf-a7b3-80ddeff4cd05")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "R79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 386.08 529.59 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -34514,73 +34606,6 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 375.92 508 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "93826926-161d-499b-acd2-65d62d6c08d9")
-		(property "Reference" "#PWR093"
-			(at 372.11 508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 379.73 507.9999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 375.92 508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3559eec3-6930-4935-87a0-dcceafe97146")
-		)
-		(instances
-			(project "ethernet_switcher_hw"
-				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
-					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -36107,72 +36132,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 350.52 515.62 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a346f6ea-1d99-4d15-b29d-d7010ca4290e")
-		(property "Reference" "#PWR095"
-			(at 354.33 515.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 349.25 514.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 350.52 515.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 350.52 515.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 350.52 515.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f019d576-3873-4bb8-98ce-d641e19ed430")
-		)
-		(instances
-			(project "ethernet_switcher_hw"
-				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
-					(reference "#PWR095")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "GOST:GND")
 		(at 438.15 69.85 0)
 		(unit 1)
@@ -36457,6 +36416,72 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 375.92 523.24 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aac0ffcb-9d1c-4e54-b715-23a046d84a11")
+		(property "Reference" "#PWR097"
+			(at 372.11 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 376.428 521.716 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 375.92 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 375.92 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 375.92 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2dad02cf-c8cd-4e96-8d59-80200218663f")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -36751,6 +36776,72 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 350.52 500.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b0140c38-32ea-4755-acf4-92bb2e1407df")
+		(property "Reference" "#PWR0123"
+			(at 354.33 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 351.79 499.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 350.52 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 350.52 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15626c4a-0f23-4121-9b46-93afcbca4a89")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -37612,8 +37703,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 350.266 491.49 90)
+		(property "Value" "+3.3V_t"
+			(at 351.79 491.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37805,6 +37896,72 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 375.92 500.38 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba140ec6-df3d-4080-8f93-6b24120d2bf0")
+		(property "Reference" "#PWR093"
+			(at 372.11 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 376.428 498.856 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 375.92 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 375.92 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 375.92 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f06689a-6114-40b8-9e1f-a817b0b72b37")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -40464,73 +40621,6 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "#PWR073")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 375.92 492.76 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d6849b34-7f1c-40cc-88f5-363799e34eaa")
-		(property "Reference" "#PWR085"
-			(at 372.11 492.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 379.73 492.7599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 492.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 492.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 375.92 492.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e13c9a52-1666-4b88-92c8-436c1738b5a0")
-		)
-		(instances
-			(project ""
-				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
-					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -43803,6 +43893,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 375.92 515.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f98a9e89-e0e8-4c03-8303-a01c7d741ce5")
+		(property "Reference" "#PWR096"
+			(at 372.11 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 376.428 514.096 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 375.92 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 375.92 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 375.92 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa6d4d8f-8584-4524-b81b-78ae072934fa")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR096")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "GOST:GND")
 		(at 560.07 67.31 0)
 		(unit 1)
@@ -44140,6 +44296,72 @@
 			(project "ethernet_switcher_hw"
 				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
 					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 350.52 515.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc8a3e15-2266-4378-a3b0-85d874139c93")
+		(property "Reference" "#PWR085"
+			(at 354.33 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_t"
+			(at 351.79 514.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 350.52 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 350.52 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca885fcf-5c1f-4620-a73d-2b8745e25a83")
+		)
+		(instances
+			(project "ethernet_switcher_hw"
+				(path "/9d1be04f-45b9-4cbf-bb98-6cf70b1e6e64"
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
